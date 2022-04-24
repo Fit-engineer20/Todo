@@ -1,0 +1,12 @@
+<%- include("header.ejs"); -%>
+    <div class="box" id="heading">
+      <h1>List of <%=todayDate%></h1>
+    </div>
+  <div class="box">
+    <%  for(var i=0; i<newitem.length; i++) { %>
+      <div class="item">
+        <input type="checkbox">
+        <p><%= newitem[i].name %></p>
+      </div>
+    <%   }    %>
+<%- include("footer.ejs");-%>  
